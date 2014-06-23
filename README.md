@@ -1,5 +1,6 @@
 Prusa-Sketcher
 ==============
+<<<<<<< HEAD
 
 First off, if you want STL's, you'll have to compile OpenSCAD from the latest source (2014.06.18).
 
@@ -28,3 +29,4 @@ Median-value is used to simplify images with convert's -median argument. This is
 CLOCK
 1) cd /java/time
 2) java ExecuteShellCommand (yes this is repurposed code from someone else)
+
