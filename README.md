@@ -3,16 +3,11 @@ Prusa-Sketcher
 
 First off, if you want STL's, you'll have to compile OpenSCAD from the latest source (2014.06.18).
 
-Dependencies:
-Java 7
-GIMP
-ImageMagick
-pstoedit
-KISSlicer
+Dependencies: Java 7 GIMP ImageMagick pstoedit KISSlicer
 
 USAGE:
 =============
-You'll have to recompile java programs with "javac "ScriptName.java"
+You'll have to recompile java programs with 'javac "ScriptName.java"'
 
 CAMERA
 ============
