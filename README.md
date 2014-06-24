@@ -16,8 +16,6 @@ If you're willing to try the software the awesome thing is that any geared extru
 5. KISSlicer 
 6. OpenSCAD *(Requires 'resize()', introduced in 2014.06.18)*
 
-You'll have to recompile java programs with 'javac "ScriptName.java"'
-
 ***PicToGCO***
 ===========
 ***Homing***
@@ -32,11 +30,12 @@ You'll have to recompile java programs with 'javac "ScriptName.java"'
 2. Download KISSlicer and place into the "kiss" folder.
 3. Place the "script-fu-pencil-drawing.scm" into your GIMP plugin directory.
 4. cd /java/camera
+5. The first time you run the script you'll need to recompile it. "javac PicToGCO.java"
 5. java PicToGCO "picname.ext" "median-value" 
 
 DO NOT USE AN ABSOLUTE PATH. PLACE PIC IN "pics" FOLDER.
 
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be sccripted to a range for variable size in a future release. Default is 2.
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2.
 
 CLOCK
 ===========
@@ -55,6 +54,8 @@ BUGS/ISSUES
 3. Enable use of an absolute path for the file name.
 4. Properly handle null arguments.
 5. Enable exporting surfaces for true 3D models.
+6. Detect image size, automatically set a desirable value for "median-value".
+7. Resize image with "convert" to make them more uniform in appearance (possibly).
 
 ***Clock***
 
