@@ -7,7 +7,14 @@ https://www.youtube.com/watch?v=Uwju1ZsioHg&list=PLpUQGHNn5fr99E_rIrnBQkx1aEkpmB
 
 If you're willing to try the software the awesome thing is that any geared extruder will work for a drawing. If not, you can still generate flat STL's for impressions.
 
-Dependencies: **Java 7** *(Other versions may work)* **GIMP** **ImageMagick** **pstoedit** **KISSlicer** **OpenSCAD** *(Requires 'resize()', introduced in 2014.06.18)*
+Dependencies: 
+
+1. Java 7 *(Other versions may work)* 
+2. GIMP
+3. ImageMagick 
+4. pstoedit 
+5. KISSlicer 
+6. OpenSCAD *(Requires 'resize()', introduced in 2014.06.18)*
 
 You'll have to recompile java programs with 'javac "ScriptName.java"'
 
