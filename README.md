@@ -5,11 +5,9 @@ This project is to make use of an old Mendel Prusa. The drawing is done by attac
 
 https://www.youtube.com/watch?v=Uwju1ZsioHg&list=PLpUQGHNn5fr99E_rIrnBQkx1aEkpmByK0
 
-If you're willing to try the software the awesome thing is that any geared extruder will work.
+If you're willing to try the software the awesome thing is that any geared extruder will work for a drawing. If not, you can still generate flat STL's for impressions.
 
-Dependencies: Java 7 GIMP ImageMagick pstoedit KISSlicer *OpenSCAD*
-
-*If you want STL's for the camera function, you'll have to compile OpenSCAD from the latest source (2014.06.18).*
+Dependencies: ***Java 7** (Other versions may work)* **GIMP** **ImageMagick** **pstoedit** **KISSlicer** ***OpenSCAD** (Requires 'resize()', introduced in 2014.06.18)*
 
 You'll have to recompile java programs with 'javac "ScriptName.java"'
 
@@ -49,6 +47,7 @@ BUGS/ISSUES
 2. Script drags marker to the first position. Place retract in "prefix.gcode".
 3. Enable use of an absolute path for the file name.
 4. Properly handle null arguments.
+5. Enable exporting surfaces for true 3D models.
 
 ***Clock***
 
