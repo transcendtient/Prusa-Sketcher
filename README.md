@@ -52,6 +52,8 @@ BUGS/ISSUES
 
 1. Rename module.
 2. Clean up variables, comment code.
+3. Implement PicToGCO and randomize the font number used.
+4. Use different numbering systems (binary...)
 
 ***General***
 
