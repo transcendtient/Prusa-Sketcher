@@ -70,3 +70,4 @@ BUGS/ISSUES
 2. Comment scripts better.
 3. Remove submodule Pronterface from repository.
 4. Unify clock and camera to allow interrupt and pause before placing paper.
+5. Automatically determine serial port for ATMEGA communication (currently hardcoded).
