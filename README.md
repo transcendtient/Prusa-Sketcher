@@ -15,8 +15,9 @@ If you're willing to try the software the awesome thing is that any geared extru
 4. pstoedit 
 5. KISSlicer 
 6. OpenSCAD *(Requires 'resize()', introduced in 2014.06.18)*
+7. NEXT RELEASE - librxtx-java *(Version 2.2+)*
 
-***PicToGCO***
+PicToGCO
 ===========
 ***Homing***
 
@@ -35,10 +36,18 @@ If you're willing to try the software the awesome thing is that any geared extru
 
 DO NOT USE AN ABSOLUTE PATH. PLACE PIC IN "pics" FOLDER.
 
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2.
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. _Default is 2_ Default should be 2, but crashes if no argument is passed.
 
 CLOCK
 ===========
+***Homing***
+
+1. Home the printer.
+2. Raise the extruder 10mm.
+3. Place the marker so it contacts the print surface.
+
+***Operation***
+
 1. unzip Pronterface
 2. cd /java/time
 3. sudo java ExecuteShellCommand (yes this is repurposed code from someone else)
