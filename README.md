@@ -36,7 +36,7 @@ PicToGCO
 
 DO NOT USE AN ABSOLUTE PATH. PLACE PIC IN "pics" FOLDER.
 
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. _Default is 2_ Default should be 2, but crashes if no argument is passed.
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. ~~Default is 2~~ Default should be 2, but crashes if no argument is passed.
 
 CLOCK
 ===========
