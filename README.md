@@ -7,6 +7,8 @@ https://www.youtube.com/watch?v=Uwju1ZsioHg&list=PLpUQGHNn5fr99E_rIrnBQkx1aEkpmB
 
 If you're willing to try the software the awesome thing is that any geared extruder will work for a drawing. If not, you can still generate flat STL's for impressions.
 
+I'll add a variant that uses the z-level to pick up the marker in a future release for those without a geared extruder on the hot end. It will require looking for destring in the gcode and chopping the file manually.
+
 ***Dependencies*** 
 
 1. Java 7
