@@ -9,13 +9,13 @@ If you're willing to try the software the awesome thing is that any geared extru
 
 ***Dependencies*** 
 
-1. Java 7 *(Other versions may work)* 
+1. Java 7
 2. GIMP
-3. ImageMagick 
+3. convert 
 4. pstoedit 
 5. KISSlicer 
-6. OpenSCAD *(Requires 'resize()', introduced in 2014.06.18)*
-7. NEXT RELEASE - librxtx-java *(Version 2.2+)*
+6. OpenSCAD *(2014.06.18)*
+7. librxtx-java *(Version 2.2+)*
 
 PicToGCO
 ===========
