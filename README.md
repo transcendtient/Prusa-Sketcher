@@ -27,16 +27,13 @@ PicToGCO
 
 ***Operation***
 
-1. Place your picture into "pics" folder (the script won't work if you don't do this).
-2. Download KISSlicer and place into the "kiss" folder.
-3. Place the "script-fu-pencil-drawing.scm" into your GIMP plugin directory.
-4. cd /java/camera
-5. The first time you run the script you'll need to recompile it. "javac PicToGCO.java"
-5. java PicToGCO "picname.ext" "median-value" 
+1. Download KISSlicer http://www.kisslicer.com/download.html and place into the "kiss" folder.
+2. Place the "/Dependencies/script-fu-pencil-drawing.scm" into your GIMP plugin directory (/usr/lib/gimp/2.0/plug-ins/).
+3. cd PicToGCO
+4. The first time you run the script you'll need to recompile it. "javac PicToGCO.java"
+5. java PicToGCO "picABSOLUTEpath.ext" "median-value" "drawVal1 drawVal2"
 
-DO NOT USE AN ABSOLUTE PATH. PLACE PIC IN "pics" FOLDER.
-
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. ~~Default is 2~~ Default should be 2, but crashes if no argument is passed.
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2.
 
 CLOCK
 ===========
@@ -50,7 +47,7 @@ CLOCK
 
 1. unzip Pronterface
 2. cd /java/time
-3. sudo java ExecuteShellCommand (yes this is repurposed code from someone else)
+3. sudo java Clock (yes this is repurposed code from someone else)
 
 *If you don't want to mess with permissions, just run the script as sudo.*
 
@@ -58,25 +55,25 @@ BUGS/ISSUES
 ===========
 ***PicToGCO*** 
 
-1. Script overwrites original picture if it is a jpg.
-2. Script drags marker to the first position. Place retract in "prefix.gcode".
-3. Enable use of an absolute path for the file name.
-4. Properly handle null arguments.
+1. ~~Script overwrites original picture if it is a jpg.~~ Script makes a copy of the picture now.
+2. ~~Script drags marker to the first position. Place retract in "prefix.gcode".~~ Untested but should be fixed.
+3. ~~Enable use of an absolute path for the file name.~~
+4. ~~Properly handle null arguments.~~
 5. Enable exporting surfaces for true 3D models.
 6. Detect image size, automatically set a desirable value for "median-value".
 7. Resize image with "convert" to make them more uniform in appearance (possibly).
 
 ***Clock***
 
-1. Rename module.
-2. Clean up variables, comment code.
+1. ~~Rename module.~~
+2. ~~Clean up variables, comment code.~~
 3. Implement PicToGCO and randomize the font number used.
 4. Use different numbering systems (binary...)
 
 ***General***
 
-1. Simplify file structure (less directories).
-2. Comment scripts better.
-3. Remove submodule Pronterface from repository.
+1. ~~Simplify file structure (less directories).~~
+2. ~~Comment scripts better.~~
+3. ~~Remove submodule Pronterface from repository.~~
 4. Unify clock and camera to allow interrupt and pause before placing paper.
-5. Automatically determine serial port for ATMEGA communication (currently hardcoded).
+5. ~~Automatically determine serial port for ATMEGA communication (currently hardcoded).~~ 
