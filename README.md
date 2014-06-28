@@ -28,10 +28,11 @@ PicToGCO
 ***Operation***
 
 1. Download KISSlicer http://www.kisslicer.com/download.html and place into the "kiss" folder.
-2. Place the "/Dependencies/script-fu-pencil-drawing.scm" into your GIMP plugin directory (/usr/lib/gimp/2.0/plug-ins/).
-3. cd PicToGCO
-4. The first time you run the script you'll need to recompile it. "javac PicToGCO.java"
-5. java PicToGCO "picABSOLUTEpath.ext" "median-value" "drawVal1 drawVal2"
+2. untar Printrun-master into the main directory. "tar -xvf /Dependencies/Printrun-master.tar.gz ./"
+3. Place the "/Dependencies/script-fu-pencil-drawing.scm" into your GIMP plugin directory (/usr/lib/gimp/2.0/plug-ins/).
+4. cd PicToGCO
+5. The first time you run the script you'll need to recompile it. "javac PicToGCO.java"
+6. java PicToGCO "picABSOLUTEpath.ext" "median-value" "drawVal1 drawVal2"
 
 Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2.
 
