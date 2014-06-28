@@ -48,9 +48,10 @@ CLOCK
 
 ***Operation***
 
-1. unzip Pronterface
-2. cd /java/time
-3. sudo java Clock (yes this is repurposed code from someone else)
+1. untar Printrun-master into the main directory. "tar -xvf /Dependencies/Printrun-master.tar.gz ./"
+2. cd Clock
+3. The first time you run the script you'll need to recompile it. "javac -classpath .:/usr/share/java/RXTXcomm.jar PicToGCO.java"
+3. sudo java -classpath .:/usr/share/java/RXTXcomm.jar -Djava.library.path="/usr/lib/jni/" Clock
 
 *If you don't want to mess with permissions, just run the script as sudo.*
 
