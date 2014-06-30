@@ -19,6 +19,8 @@ I'll add a variant that uses the z-level to pick up the marker in a future relea
 6. KISSlicer 
 7. OpenSCAD *(2013.06)*
 
+The scripts in the main folder will likely get all your dependencies installed except the GIMP plugin. (Coming in next update)
+
 PicToGCO
 ===========
 ***Homing***
