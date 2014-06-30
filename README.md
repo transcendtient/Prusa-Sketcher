@@ -13,11 +13,11 @@ I'll add a variant that uses the z-level to pick up the marker in a future relea
 
 1. Java 7
 2. GIMP
-3. convert 
+3. ImageMagick
 4. pstoedit 
-5. KISSlicer 
-6. OpenSCAD *(2014.06.18)*
-7. librxtx-java *(Version 2.2+)*
+5. librxtx-java *(Version 2.2+)*
+6. KISSlicer 
+7. OpenSCAD *(2013.06)*
 
 PicToGCO
 ===========
