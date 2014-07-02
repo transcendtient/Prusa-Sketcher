@@ -20,6 +20,7 @@ I'll add a variant that uses the z-level to pick up the marker in a future relea
 7. OpenSCAD *(2013.06)*
 
 The scripts in the main folder will likely get all your dependencies installed except the GIMP plugin. (Coming in next update)
+*The script does not install OpenSCAD from source correctly currently. You'll have to manually do it until I finish scripting the build.*
 
 PicToGCO
 ===========
