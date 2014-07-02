@@ -1,8 +1,11 @@
-(define (script-fu-pencil-drawing sfImage
-                                  sfDrawable
-                                  sfBlurRadius
-                                  sfStrength
-                                  sfMergeLayers)
+ (define (do-pencil-drawing filename
+                            sfBlurRadius
+                            sfStrength)
+
+   (let* ((sfImage (car (gimp-file-load RUN-NONINTERACTIVE filename filename)))
+          (sfDrawable (car (gimp-image-get-active-layer sfImage)))
+          (sfMergeLayers 1))
+
     (let* (
             (varActiveLayer
                 (car
@@ -119,24 +122,14 @@
                     (+ varCounter 1)
                 )
             )
+            
+            (gimp-image-flatten sfImage)
         )
     )
     (gimp-context-pop)
     (gimp-displays-flush)
     (gimp-image-undo-group-end sfImage)
-)
 
-(script-fu-register "script-fu-pencil-drawing"
-    "Pencil-Drawing"
-    "Generate a pencil drawing from a photo."
-    "Lukas Stahl"
-    "Copyright 2009, Lukas Stahl based on an tutorial from gimpusers.de"
-    "04.01.2010"
-    "*"
-    SF-IMAGE "Image" 0
-    SF-DRAWABLE "Drawable" 0
-    SF-ADJUSTMENT "Blur Radius" '(4 0 5120 1 10 0 1)
-    SF-ADJUSTMENT "Strength" '(1 1 50 1 10 0 0)
-    SF-TOGGLE "Merge Layers" TRUE
-)
-(script-fu-menu-register "script-fu-pencil-drawing" "<Image>/Filters")
+	 (set! sfDrawable (car (gimp-image-get-active-layer sfImage)))
+     (gimp-file-save RUN-NONINTERACTIVE sfImage sfDrawable filename filename)
+     (gimp-image-delete sfImage)))
