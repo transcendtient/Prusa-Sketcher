@@ -17,6 +17,9 @@ If you're willing to try the software the awesome thing is that any geared extru
 6. OpenSCAD *(2014.06.18)*
 7. librxtx-java *(Version 2.2+)*
 
+The scripts in the main folder will likely get all your dependencies installed except the GIMP plugin. (Coming in next update)
+*The script does not install OpenSCAD from source correctly currently. You'll have to manually do it until I finish scripting the build.*
+
 PicToGCO
 ===========
 ***Homing***
