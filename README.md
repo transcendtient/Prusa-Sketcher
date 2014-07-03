@@ -23,6 +23,10 @@ The scripts in the main folder will likely get all your dependencies installed.
 
 PicToGCO
 ===========
+
+This will generate a STL and GCODE along with various picture files from any picture and file it in the Pictures folder under the picture name and CRC32 directory.
+The printing process is not automated, just open the GCODE file with your favorite interface program and follow the instructions below.
+
 ***Homing***
 
 1. Home the printer.
@@ -42,6 +46,9 @@ http://registry.gimp.org/node/25042
 
 CLOCK
 ===========
+
+This program will write the time from a set of number GCODE files using your computer system time. It automatically finds your printer port and takes care of it all.
+
 ***Homing***
 
 1. Home the printer.
