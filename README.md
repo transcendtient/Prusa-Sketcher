@@ -13,12 +13,13 @@ If you're willing to try the software the awesome thing is that any geared extru
 2. GIMP
 3. convert 
 4. pstoedit 
-5. KISSlicer 
-6. OpenSCAD *(2014.06.18)*
-7. librxtx-java *(Version 2.2+)*
+5. potrace
+6. KISSlicer 
+7. OpenSCAD *(2014.06.18)*
+8. librxtx-java *(Version 2.2+)*
 
-The scripts in the main folder will likely get all your dependencies installed except the GIMP plugin. (Coming in next update)
-*The script does not install OpenSCAD from source correctly currently. You'll have to manually do it until I finish scripting the build.*
+The scripts in the main folder will likely get all your dependencies installed.
+*The script will MAKE FROM SOURCE OpenSCAD on Debian like systems (Ubuntu, Mint, etc...)*
 
 PicToGCO
 ===========
@@ -39,7 +40,7 @@ PicToGCO
 
 DO NOT USE AN ABSOLUTE PATH. PLACE PIC IN "pics" FOLDER.
 
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. ~~Default is 2~~ Default should be 2, but crashes if no argument is passed.
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2
 
 CLOCK
 ===========
