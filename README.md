@@ -25,7 +25,7 @@ PicToGCO
 ===========
 
 This will generate a STL and GCODE along with various picture files from any picture and file it in the Pictures folder under the picture name and CRC32 directory.
-The printing process is not automated, just open the GCODE file with your favorite interface program and follow the instructions below.
+The printing process is not automated, just open the GCODE file with your favorite printer interface program after running the script.
 
 ***Homing***
 
