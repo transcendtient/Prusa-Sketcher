@@ -32,6 +32,7 @@ The printing process is not automated, just open the GCODE file with your favori
 1. Home the printer.
 2. Raise the extruder 10mm.
 3. Place the marker so it contacts the print surface.
+4. Issue the command "G92 X0Y0Z0E0". This redefines home position.
 
 ***Operation***
 
@@ -39,10 +40,17 @@ Until I add a script to launch from the main directory.
 
 1. cd /core/java/
 2. java PicToGCO "picname.ext" "median-value" "GIMPDraw1 GIMPDraw2"
+3. Use the GCODE file in /Prusa-Sketcher/Pictures/<PICNAME>/<PICSHA32> to draw your picture.
 
-Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2 GIMPDraw values are explained at the plugin source below.
+**If you get a KISSlicer error in the script you may have to manually unzip the appropriate file to your /Prusa-Sketcher/kiss/ directory.**
+
+Median-value is used to simplify images with convert's -median argument. This is highly dependant on image size, and will be scripted to a range for variable size in a future release. Default is 2.
+
+GIMPDraw values are explained at the plugin source below.
 
 http://registry.gimp.org/node/25042
+
+*<PICSHA32> Is a numeric hash of the bytestream of the picture file used to uniquely identify pictures with the same name.*
 
 CLOCK
 ===========
@@ -54,6 +62,8 @@ This program will write the time from a set of number GCODE files using your com
 1. Home the printer.
 2. Raise the extruder 10mm.
 3. Place the marker so it contacts the print surface.
+4. Issue the command "G92 X0Y0Z0E0". This redefines home position.
+
 
 ***Operation***
 
