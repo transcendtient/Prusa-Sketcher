@@ -90,4 +90,3 @@ BUGS/ISSUES
 ***General***
 
 1. Unify clock and camera to allow interrupt and pause before placing paper.
-2. Automatically determine serial port for ATMEGA communication (currently hardcoded).
