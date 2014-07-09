@@ -50,7 +50,7 @@ GIMPDraw values are explained at the plugin source below.
 
 http://registry.gimp.org/node/25042
 
-*<PICSHA32> Is a numeric hash of the bytestream of the picture file used to uniquely identify pictures with the same name.*
+*/<PICSHA32\> Is a numeric hash of the bytestream of the picture file used to uniquely identify pictures with the same name.*
 
 CLOCK
 ===========
