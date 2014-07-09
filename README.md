@@ -40,7 +40,7 @@ Until I add a script to launch from the main directory.
 
 1. cd /core/java/
 2. java PicToGCO "picname.ext" "median-value" "GIMPDraw1 GIMPDraw2"
-3. Use the GCODE file in /Prusa-Sketcher/Pictures/<PICNAME>/<PICSHA32> to draw your picture.
+3. Use the GCODE file in /Prusa-Sketcher/Pictures/PICNAME/PICSHA32 to draw your picture.
 
 **If you get a KISSlicer error in the script you may have to manually unzip the appropriate file to your /Prusa-Sketcher/kiss/ directory.**
 
@@ -50,7 +50,7 @@ GIMPDraw values are explained at the plugin source below.
 
 http://registry.gimp.org/node/25042
 
-*/<PICSHA32\> Is a numeric hash of the bytestream of the picture file used to uniquely identify pictures with the same name.*
+*PICSHA32 Is a numeric hash of the bytestream of the picture file used to uniquely identify pictures with the same name.*
 
 CLOCK
 ===========
